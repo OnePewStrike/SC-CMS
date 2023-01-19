@@ -7,6 +7,7 @@
     <title>Home</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+    <script src="custom.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!-- Header Section -->
@@ -49,6 +50,42 @@
                 </li>
             </ul>
         </nav>
+    </section>
+
+    <!-- Login Form Pop Up  -->
+    <section class="hero">
+        <div class="wrapper">
+            <header>Sign in</header>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <i class="fa-solid fa-xmark"></i>
+            <form action="">
+                <div class="field input">
+                    <label for="email">Email Address</label>
+                    <div class="input">
+                        <input id="email" type="email" class="form-control" name="email" 
+                        required autocomplete="email" autofocus>
+                    </div>
+                </div>
+                <div class="field input">
+                    <label for="password">Password</label>
+                    <div class="input">
+                        <input id="password" type="password" class="form-control" name="password"
+                        required autocomplete="current-password">
+                    </div>
+                </div>
+                <div class="forgot-password"><a href="">Forgot Password?</a></div>
+                <div class="field button">
+                    <button type="submit">Sign in</button>
+                </div>
+            </form>
+            <div class="horizontal-line"></div>
+            <div class="bottom">
+                <h5>
+                    Don't have an account?
+                    <button>Register</button>
+                </h5>
+            </div>
+        </div>
     </section>
 </body>
 </html>
