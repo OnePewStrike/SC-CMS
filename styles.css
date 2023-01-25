@@ -133,7 +133,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 /* General Page Section */
 .hero-general {
-    padding: 20px 40px;
+    padding: 20px 8%;
 }
 
 /* Breadcrumbs  */
