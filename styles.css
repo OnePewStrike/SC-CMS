@@ -762,3 +762,110 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-right: 10px;
     cursor: pointer;
 }
+
+/* News Intro Section */
+.news-intro {
+    position: relative;
+    margin: 0;
+    height: 700px;
+}
+
+.news-intro .large-img {
+    position: absolute;
+    display: flex;
+    right: 0;
+    width: 75%;
+    height: 700px;
+    border: 1px solid #000;
+    border-top: none;
+}
+
+.news-intro .news-wrapper {
+    position: absolute;
+    top: 20%;
+    height: 520px;
+    width: 490px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-radius: 2px;
+    padding: 20px 25px;
+}
+
+.news-intro .news-wrapper .category {
+    display: flex;
+    align-items: center;
+}
+
+.news-intro .news-wrapper h3 {
+    letter-spacing: 8px;
+    margin-right: 10px;
+}
+
+.news-intro .news-wrapper .horizontal-line {
+    height: 2px;
+    width: 75px;
+    background-color: #000;
+}
+
+/* Featured News Section */
+.hero-news {
+    margin-top: 30px;
+}
+
+.hero-news .header-container {
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 40px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+}
+
+.hero-news .header-container header {
+    font-size: 1.75rem;
+    font-weight: 500;
+    letter-spacing: 8px;
+}
+
+.hero-news .container {
+    margin: 20px 0 ;
+    padding: 0 40px;
+    display: flex;
+}
+
+.hero-news .container .large-content {
+    width: 35%;
+    margin-right: 10px;
+    height: 600px;
+    border: 1px solid #000;
+}
+
+.hero-news .container .large-content .img {
+    height: 68%;
+    border-bottom: 1px solid #000;
+}
+
+.hero-news .container .small-contents {
+    width: 64%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+
+.hero-news .container .small-contents .content {
+    height: 295px;
+    border: 1px solid #000;
+}
+
+/* Latest News Section */
+.hero-news .row {
+    margin: 20px 0 ;
+    padding: 0 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.hero-news .row .content {
+    height: 550px;
+    border: 1px solid #000;
+}
