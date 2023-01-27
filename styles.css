@@ -476,7 +476,6 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     margin-right: 50px;
 }
 
-
 .hero-general .content.event aside .filters .header-details {
     margin-bottom: 10px;
 }
@@ -1257,4 +1256,116 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     text-decoration: underline;
 }
 
+/* Contact Content */
+.hero-general .content.contact header{
+    font-size: 3rem;
+}
 
+.hero-general .content.contact .container {
+    margin: 2% 0;
+}
+
+.hero-general .content.contact aside {
+    margin-right: 50px;
+}
+
+.hero-general .content.contact article {
+    margin-right: 0;
+}
+
+.hero-general .content.contact aside nav ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.hero-general .content.contact aside nav ul li {
+    list-style: none;
+    margin: 5px 0;
+}
+
+.hero-general .content.contact aside nav ul li a {
+    color: #000;
+    text-decoration: none;
+}
+
+.hero-general .content.contact aside nav ul li a:hover {
+    text-decoration: underline;
+}
+
+.hero-general .content.contact article p {
+    text-align: justify;
+}
+
+.hero-general .content.contact article .info {
+    margin: 20px 0;
+}
+
+.hero-general .content.contact article .header-details {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+}
+
+.hero-general .content.contact article .header-details header {
+    font-size: 1rem;
+    color: #737373;
+}
+
+.hero-general .content.contact article .row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.hero-general .content.contact article .row .content label {
+    margin: 10px 0;
+    font-weight: 600;
+}
+
+
+.hero-general .content.contact article .row .content .contact-details h4 {
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.hero-general .content.contact article .feedback-form {
+    margin: 10px 0;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper {
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 20px;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper header {
+    font-size: 1.125rem;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper p {
+    font-size: 1.125rem;
+    margin: 5px 0;
+    font-weight: 500;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper button {
+    margin: 15px 0 5px 0;
+    padding: 8px 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease 0s;
+    border: 1px solid #000;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper button:hover {
+    background-color: #000;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper button:hover a {
+    color: #fff;
+}
+
+.hero-general .content.contact article .feedback-form .wrapper button a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.125rem;
+}
