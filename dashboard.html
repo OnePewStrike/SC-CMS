@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://kit.fontawesome.com/84e2199ce0.js" crossorigin="anonymous"></script>
+  <script src="custom.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!-- Dashboard Section -->
+  <section class="dashboard-container">
+    <aside class="side-navbar">
+      <header>
+        <div class="logo"></div>
+        <div class="title">
+          <h3>Confederates</h3>
+          <h3>Student Council</h3>
+        </div>
+      </header>
+      <nav>
+        <ul>
+          <li>
+            <a href="">
+              <div class="left">
+                <i class="fa-solid fa-gauge-high"></i>
+                <h4>Dashboard</h4>
+              </div>
+              <div class="right"></div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="left">
+                <i class="fa-solid fa-flag"></i>
+                <h4>Council Members</h4>
+              </div>
+              <div class="right">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="left">
+                <i class="fa-solid fa-layer-group"></i>
+                <h4>Committees</h4>
+              </div>
+              <div class="right">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="left">
+                <i class="fa-regular fa-circle-user"></i>
+                <h4>Users</h4>
+              </div>
+              <div class="right">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="left">
+                <i class="fa-regular fa-calendar"></i>
+                <h4>Events</h4>
+              </div>
+              <div class="right">
+                <i class="fa-solid fa-angle-right"></i>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a href="">
+              <div class="left">
+                <i class="fa-solid fa-gear"></i>
+                <h4>Settings</h4>
+              </div>
+              <div class="right"></div>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+    <main class="content">
+      <header>
+        <form>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="name" name="name" placeholder="Search for anything...">
+        </form>
+        <h2>Dashboard</h2>
+      </header>
+      <section class="main-container">
+        <section class="row">
+          <div class="card">
+            <div class="group">
+              <i class="fa-solid fa-laptop"></i>
+              <h5>Verified Students</h5>
+            </div>
+            <h1>999</h1>
+          </div>
+          <div class="card">
+            <div class="group">
+              <i class="fa-solid fa-chalkboard-user"></i>
+              <h5>Total Teachers</h5>
+            </div>
+            <h1>999</h1>
+          </div>
+          <div class="card">
+            <div class="group">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <h5>Total Admins</h5>
+            </div>
+            <h1>999</h1>
+          </div>
+        </section>
+        <section class="double-content">
+          <section class="verify-request">
+            <header>
+              <h3>Verify Request</h3>
+              <button>
+                <h5>Filter</h5>
+                <i class="fa-solid fa-angle-down"></i>
+              </button>
+            </header>
+            <section class="content">
+              <div class="verify-details">
+                <div class="user-details">
+                  <div class="user-img"></div>
+                  <div class="details">
+                    <h5>Name Placeholder</h5>
+                    <div class="group">
+                      <h5>Year</h5>
+                      <div class="circle"></div>
+                      <h5>Department</h5>
+                      <div class="circle"></div>
+                      <h5>Date</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="action">
+                  <button>Verify</button>
+                </div>
+              </div>
+            </section>
+            <section class="content">
+              <div class="verify-details">
+                <div class="user-details">
+                  <div class="user-img"></div>
+                  <div class="details">
+                    <h5>Name Placeholder</h5>
+                    <div class="group">
+                      <h5>Year</h5>
+                      <div class="circle"></div>
+                      <h5>Department</h5>
+                      <div class="circle"></div>
+                      <h5>Date</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="action">
+                  <button>Verify</button>
+                </div>
+              </div>
+            </section>
+            <section class="content">
+              <div class="verify-details">
+                <div class="user-details">
+                  <div class="user-img"></div>
+                  <div class="details">
+                    <h5>Name Placeholder</h5>
+                    <div class="group">
+                      <h5>Year</h5>
+                      <div class="circle"></div>
+                      <h5>Department</h5>
+                      <div class="circle"></div>
+                      <h5>Date</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="action">
+                  <button>Verify</button>
+                </div>
+              </div>
+            </section>
+          </section>
+          <article></article>
+        </section>
+        <section class="user-data">
+          <header class="selectors">
+            <button>Students</button>
+            <button>Teachers</button>
+          </header>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th class="column1">Name</th>
+                  <th class="column2">ID</th>
+                  <th class="column3">Age</th>
+                  <th class="column4">Sex</th>
+                  <th class="column5">Department</th>
+                  <th class="column6">Year</th>
+                  <th class="column7">Email</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Name Placeholder</td>
+                  <td>CS10235</td>
+                  <td>21</td>
+                  <td>Male</td>
+                  <td>Computer Science</td>
+                  <td>3rd Year</td>
+                  <td>test@test.com</td>
+                </tr>
+                <tr>
+                  <td>Name Placeholder</td>
+                  <td>CS10235</td>
+                  <td>21</td>
+                  <td>Male</td>
+                  <td>Computer Science</td>
+                  <td>3rd Year</td>
+                  <td>test@test.com</td>
+                </tr>
+                <tr>
+                  <td>Name Placeholder</td>
+                  <td>CS10235</td>
+                  <td>21</td>
+                  <td>Male</td>
+                  <td>Computer Science</td>
+                  <td>3rd Year</td>
+                  <td>test@test.com</td>
+                </tr>
+                <tr>
+                  <td>Name Placeholder</td>
+                  <td>CS10235</td>
+                  <td>21</td>
+                  <td>Male</td>
+                  <td>Computer Science</td>
+                  <td>3rd Year</td>
+                  <td>test@test.com</td>
+                </tr>
+                <tr>
+                  <td>Name Placeholder</td>
+                  <td>CS10235</td>
+                  <td>21</td>
+                  <td>Male</td>
+                  <td>Computer Science</td>
+                  <td>3rd Year</td>
+                  <td>test@test.com</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </section>
+    </main>
+    <aside class="user-content">
+      <header class="user">
+        <div class="actions">
+          <div class="icon">
+            <i class="fa-regular fa-calendar"></i>
+          </div>
+          <div class="icon">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+        </div>
+        <div class="user-details">
+          <h5>Name Placeholder</h5>
+          <div class="user-img"></div>
+          <i class="fa-solid fa-angle-down"></i>
+        </div>
+      </header>
+      <section class="user-container">
+        <section class="upcoming-events">
+          <header>
+            <h3>Upcoming Events</h3>
+            <i class="fa-regular fa-square-plus"></i>
+          </header>
+          <div class="col">
+            <div class="content">
+              <div class="img"></div>
+              <div class="event-details">
+                <h5>Event Name Placeholder</h5>
+                <div class="group">
+                  <h5>UCS 301A</h5>
+                  <h5>22 Jan</h5>
+                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </div>
+            <section class="content">
+              <div class="img"></div>
+              <div class="event-details">
+                <h5>Event Name Placeholder</h5>
+                <div class="group">
+                  <h5>UCS 301A</h5>
+                  <h5>22 Jan</h5>
+                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </section>
+            <section class="content">
+              <div class="img"></div>
+              <div class="event-details">
+                <h5>Event Name Placeholder</h5>
+                <div class="group">
+                  <h5>UCS 301A</h5>
+                  <h5>22 Jan</h5>
+                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </section>
+            <section class="content">
+              <div class="img"></div>
+              <div class="event-details">
+                <h5>Event Name Placeholder</h5>
+                <div class="group">
+                  <h5>UCS 301A</h5>
+                  <h5>22 Jan</h5>
+                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </section>
+            <section class="content">
+              <div class="img"></div>
+              <div class="event-details">
+                <h5>Event Name Placeholder</h5>
+                <div class="group">
+                  <h5>UCS 301A</h5>
+                  <h5>22 Jan</h5>
+                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </section>
+            <section class="content">
+              <div class="img"></div>
+              <div class="event-details">
+                <h5>Event Name Placeholder</h5>
+                <div class="group">
+                  <h5>UCS 301A</h5>
+                  <h5>22 Jan</h5>
+                </div>
+              </div>
+              <i class="fa-solid fa-angle-right"></i>
+            </section>
+          </div>
+        </section>
+      </section>
+    </aside>
+  </section>
+</body>
+</html>

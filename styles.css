@@ -684,6 +684,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     right: 20px;
     cursor: pointer;
     font-size: 1.25rem;
+    transition: all 0.3s ease 0s;
+}
+
+.hero-general .content.event article .search-container form  i:hover {
+    transform: scale(1.1);
 }
 
 .hero-general .content.event article .col {
@@ -1810,4 +1815,495 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 
 .hero-general .content.event article .comment .col .content .user-details .message p {
     text-align: justiy;
+}
+
+/* Dashboard Section */
+.dashboard-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.dashboard-container .side-navbar {
+    flex: 0 0 20%;
+    border: 1px solid #000;
+    min-height: 100vh;
+}
+
+.dashboard-container .side-navbar header {
+    margin: 20px 30px;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .side-navbar header .logo {
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    border: 1px solid #000;
+    margin-right: 10px;
+}
+
+.dashboard-container .side-navbar nav {
+    margin: 15% 0;
+}
+
+.dashboard-container .side-navbar nav ul {
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.dashboard-container .side-navbar nav ul li {
+    margin: 8% 0;
+    list-style: none;
+}
+
+.dashboard-container .side-navbar nav ul li:first-child {
+    margin-top: 0;
+}
+
+.dashboard-container .side-navbar nav ul li a {
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-container .side-navbar nav ul li a .left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container .side-navbar nav ul li a .left i {
+    margin-right: 20px;
+}
+
+
+.dashboard-container .content {
+    flex: 0 0 60%;
+}
+
+.dashboard-container .content header {  
+    border-bottom: 1px solid #000;
+    padding: 20px;
+}
+
+.dashboard-container .content header form {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .content header form input {
+    padding: 12px 20px 12px 35px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    width: 100%;
+}
+
+.dashboard-container .content header form i {
+    position: absolute;
+    margin-left: 10px;
+}
+
+.dashboard-container .content header h2 {
+    margin-top: 20px;
+}
+
+.dashboard-container .content .main-container {
+    padding: 20px;
+}
+
+.dashboard-container .content .main-container .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container .content .main-container .row .card {
+    position: relative;
+    height: 125px;
+    width: 270px;
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .content .main-container .row .card:hover {
+    transform: scale(1.01);
+}
+
+.dashboard-container .content .main-container .row .card .group {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .content .main-container .row .card .group i {
+    margin-right: 20px;
+    font-size: 1.250rem;
+}
+
+.dashboard-container .content .main-container .row .card .group h5 {
+    margin-top: -2px;
+    font-weight: 400;
+}
+
+.dashboard-container .content .main-container .row .card h1 {
+    position: relative;
+    margin-top: 6%;
+    font-size: 3.250rem;
+    font-weight: 400;
+}
+
+.dashboard-container .content .main-container .row .card h1::after {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 120px;
+    top: 65px;
+    left: 5px;
+    background-color: #000;
+}
+
+.dashboard-container .content .main-container .double-content {
+    margin: 10px 0;
+    display: flex;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request {
+    flex: 0 0 54%;
+    margin-right: 10px;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request header {
+    padding: 12px 15px 10px;
+    border-bottom: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request header h3 {
+    font-weight: 400;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px 10px;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request button h5 {
+    margin-right: 50px;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content {
+    padding: 5px 15px;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details {
+    border-top: 1px solid #000;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .user-img {
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    border: 1px solid #000;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .user-details {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .details {
+    margin-left: 10px;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .details h5 {
+    font-weight: 400;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .details .group {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .details .group .circle {
+    height: 10px;
+    width: 10px;
+    border-radius: 100%;
+    background-color: #737373;
+    margin: 0 10px;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .action button {
+    padding: 3px 25px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid #000;
+    transition: all 0.3s ease 0s;
+    font-size: 0.75rem;
+}
+
+.dashboard-container .content .main-container .double-content .verify-request .content .verify-details .action button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+.dashboard-container .content .main-container .double-content article {
+    border: 1px solid #000;
+    border-radius: 2px;
+    flex: 0 0 45%;
+}
+
+.dashboard-container .content .main-container .user-data {
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.dashboard-container .content .main-container .user-data .selectors {
+    padding: 8px 10px;
+}
+
+.dashboard-container .content .main-container .user-data .selectors button {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.dashboard-container .content .main-container .user-data .selectors button:hover:before {
+    position: absolute;
+    content: "";
+    width: 70px;
+    height: 2px;
+    background-color: #000;
+    bottom: -9px;
+    left: 0;
+}
+
+.dashboard-container .content .main-container .user-data .selectors button:first-child {
+    margin-left: 0;
+}
+
+.dashboard-container .content .main-container .user-data .table-container {
+    padding: 5px 10px 5px;
+    margin-bottom: 10px;
+}
+
+.dashboard-container .content .main-container .user-data table {
+    border-collapse: collapse;
+}
+
+.dashboard-container .content .main-container .user-data table th,
+.dashboard-container .content .main-container .user-data table td {
+    padding: 12px 15px;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.dashboard-container .content .main-container .user-data table td {
+    color: gray;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr{
+    height: 20px;
+    cursor: pointer;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column1 {
+    width: 25%;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column2 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column3 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column4 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column5 {
+    width: 20%;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column6 {
+    width: 15%;
+}
+
+.dashboard-container .content .main-container .user-data table thead tr .column7 {
+    width: 15%;
+}
+
+.dashboard-container .content .main-container .user-data table tbody tr {
+    height: 30px;
+    cursor: pointer;
+}
+
+.dashboard-container .content .main-container .user-data table tbody tr:hover td {
+    color: #000;
+}
+
+.dashboard-container .content .main-container .user-data table tbody tr:nth-of-type(odd) {
+    background-color: #f3f3f3;
+}
+
+.dashboard-container .content .main-container .user-data table tbody tr td {
+    line-height: 1.2;
+    border-collapse: collapse;
+}
+
+/* .dashboard-container .content .main-container .user-data table tbody tr td .user-img {
+    margin-right: 10px;
+    height: 15px;
+    width: 15px;
+    border: 100%;
+    border: 1px solid #000;
+} */
+
+.dashboard-container .user-content {
+    flex: 0 0 20%;
+    min-height: 100vh;
+    border-left: 1px solid #000;
+}
+
+.dashboard-container .user-content header.user {
+    padding: 20px 15px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #000;
+}
+
+.dashboard-container .user-content header.user .actions {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .user-content header.user .user-details {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dashboard-container .user-content header.user .actions {
+    margin-right: 8px;
+}
+
+.dashboard-container .user-content header.user .actions i {
+    font-size: 1.125rem;
+}
+
+.dashboard-container .user-content header.user .actions .icon {
+    border-radius: 100%;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .user-content header.user .actions .icon:hover {
+    background-color: #737373;
+}
+
+.dashboard-container .user-content header.user .actions i:last-child {
+    margin: 0 10px;
+}
+
+.dashboard-container .user-content header.user .user-details h5 {
+    font-weight: 400;
+}
+
+.dashboard-container .user-content header.user .user-details .user-img {
+    margin: 0 10px;
+    height: 35px;
+    width: 35px;
+    border: 1px solid #000;
+    border-radius: 100%;
+}
+
+.dashboard-container .user-content .user-container {
+    padding: 15px 20px;
+}
+
+.dashboard-container .user-content .user-container header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container .user-content .user-container header i {
+    font-size: 1.250rem;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.dashboard-container .user-content .user-container header i:hover {
+    transform: scale(1.1);
+}
+
+.dashboard-container .user-content .user-container  .col {
+    margin: 10px 0;
+}
+
+.dashboard-container .user-content .user-container .col .content {
+    margin: 10px 0 10px 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .user-content .user-container .col .content .img {
+    flex: 0 0 15%;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #000;
+    border-radius: 2px;
+}
+
+.dashboard-container .user-content .user-container .col .content .event-details {
+    flex: 0 0 70%;
+    margin: 0 10px;
+}
+
+.dashboard-container .user-content .user-container .col .content .event-details .group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container .user-content .user-container .col .content .event-details h5 {
+    font-weight: 400;
+}
+
+.dashboard-container .user-content .user-container .col .content .event-details h5:last-child {
+    margin: 5px 0;
+}
+
+.dashboard-container .user-content .user-container .col .content i {
+    flex: 0 0 10%;
+    margin-left: 8px;
 }
