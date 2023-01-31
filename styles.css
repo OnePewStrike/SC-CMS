@@ -474,31 +474,35 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
 }
 
 /* Footer Section */
-.footer {
+footer {
     margin-top: 40px;
     background-color: #d9d9d9;
 }
 
-.footer .top {
+footer.admin {
+    margin: 0;
+}
+
+footer .top {
     padding: 30px 40px;
     position: relative;
     display: flex;
 }
 
-.footer .top .logo-title {
+footer .top .logo-title {
     flex: 0 0 50%;
 }
 
-.footer .top .logo-title header {
+footer .top .logo-title header {
     font-size: 2.25rem;
     font-weight: 400;
 }
 
-.footer .top .logo-title .logos {
+footer .top .logo-title .logos {
     display: flex;
 }
 
-.footer .top .logo-title .logos .icon {
+footer .top .logo-title .logos .icon {
     margin: 10px 10px 10px 0;
     height: 100px;
     width: 100px;
@@ -507,65 +511,65 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     border-radius: 100%;
 }
 
-.footer .top .site-details {
+footer .top .site-details {
     flex: 0 0 25%;
     line-height: 32px;
     font-size: 0.9rem;
 }
 
-.footer .top .redirects {
+footer .top .redirects {
     flex: 0 0 15%;
     display: flex;
     flex-direction: column;
 }
 
-.footer .top .redirects a {
+footer .top .redirects a {
     text-decoration: none;
     color: #000;
     margin: 15px 0;
 }
 
-.footer .top .redirects a:first-child {
+footer .top .redirects a:first-child {
     margin-top: 0;
 }
 
-.footer .top .redirects a:hover {
+footer .top .redirects a:hover {
     text-decoration: underline;
 }
 
-.footer .top .subscription {
+footer .top .subscription {
     position: absolute;
     bottom: 45px;
 }
-.footer .top .subscription header {
+footer .top .subscription header {
     margin-bottom: 5px;
 }
 
-.footer .top .subscription form {
+footer .top .subscription form {
     margin: 0;
     display: flex;
 }
 
-.footer .top .subscription form input {
+footer .top .subscription form input {
     border: 1px solid #000;
     border-right: none;
     padding: 20px 25px;
     width: 700px;
 }
 
-.footer .top .subscription form button {
+footer .top .subscription form button {
     padding: 20px 25px;
     background-color: #000;
     color: #fff;
     transition: all 0.3s ease 0s;
 }
 
-.footer .top .subscription form button:hover {
+footer .top .subscription form button:hover {
     color: #fff;
     background-color: #737373;
 }
 
-.footer .bottom {
+footer .bottom {
     background-color: #000;
     color: #fff;
     padding: 30px 40px;
@@ -573,11 +577,11 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     justify-content: space-between;
 }
 
-.footer .bottom .social {
+footer .bottom .social {
     font-size: 1.5rem;
 }
 
-.footer .bottom .social i {
+footer .bottom .social i {
     margin-left: 10px;
     cursor: pointer;
 }
@@ -1827,6 +1831,7 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     flex: 0 0 20%;
     border: 1px solid #000;
     min-height: 100vh;
+    border-bottom: none;
 }
 
 .dashboard-container .side-navbar header {
@@ -1868,6 +1873,19 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+.dashboard-container .side-navbar nav ul li a.highlight {
+    position: relative;
+}
+
+.dashboard-container .side-navbar nav ul li a.highlight:before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 32px;
+    background-color: #000;
+    left: -30px;
 }
 
 .dashboard-container .side-navbar nav ul li a .left {
@@ -1931,6 +1949,10 @@ input[type="search"]::-webkit-search-results-decoration { display: none; }
     padding: 10px 15px;
     cursor: pointer;
     transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .content .main-container .row .card:nth-child(2) {
+    margin: 0 10px;
 }
 
 .dashboard-container .content .main-container .row .card:hover {
