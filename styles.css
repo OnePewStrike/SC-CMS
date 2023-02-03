@@ -1877,6 +1877,7 @@ footer .bottom .social i {
 
 .dashboard-container .side-navbar nav ul li a.highlight {
     position: relative;
+    color: #737373;
 }
 
 .dashboard-container .side-navbar nav ul li a.highlight:before {
@@ -1884,7 +1885,7 @@ footer .bottom .social i {
     content: "";
     width: 4px;
     height: 32px;
-    background-color: #000;
+    background-color: #737373;
     left: -30px;
 }
 
@@ -2266,31 +2267,138 @@ footer .bottom .social i {
     border-radius: 100%;
 }
 
-.dashboard-container .user-content .user-container {
+.dashboard-container .user-content .user-container .data-user {
     padding: 15px 20px;
 }
 
-.dashboard-container .user-content .user-container header {
+.dashboard-container .user-content .user-container .data-user header {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dashboard-container .user-content .user-container header i {
+.dashboard-container .user-content .user-container .data-user header .group {
+    display: flex;
+    align-items: center;
+}
+
+.dashboard-container .user-content .user-container .data-user header .group .icon {
+    margin-right: 10px;
+    border: 1px solid #000;
+    padding: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .user-content .user-container .data-user header .group .icon:hover {
+    background-color: #D9D9D9;
+}
+
+.dashboard-container .user-content .user-container .data-user header .fa-circle-xmark {
+    font-size: 1.50rem;
+    cursor: pointer;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details {
+    margin: 5px 0;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data .circle {
+    height: 115px;
+    width: 115px;
+    border: 1px solid #000;
+    border-radius: 100%;
+    margin: 8px 0;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data h5:nth-child(3) {
+    margin: 5px 0;
+    color: #737373;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data .actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data .actions .icon {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    background-color: #d9d9d9;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data .actions .icon:nth-child(2) {
+    margin: 0 10px;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .data .actions .icon:hover {
+    background-color: #737373;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .about {
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .about p {
+    font-size: 0.90rem;
+    color: #737373;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .details {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    grid-gap: 10px;
+}
+
+.dashboard-container .user-content .user-container .data-user .user-details .details p {
+    font-size: 0.90rem;
+    color: #737373;
+}
+
+.dashboard-container .user-content .user-container .upcoming-events {
+    padding: 15px 20px;
+}
+
+.dashboard-container .user-content .user-container .upcoming-events header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container .user-content .user-container .upcoming-events header i {
     font-size: 1.250rem;
     transition: all 0.3s ease 0s;
     cursor: pointer;
 }
 
-.dashboard-container .user-content .user-container header i:hover {
+.dashboard-container .user-content .user-container .upcoming-events header i:hover {
     transform: scale(1.1);
 }
 
-.dashboard-container .user-content .user-container  .col {
+.dashboard-container .user-content .user-container .upcoming-events  .col {
     margin: 10px 0;
 }
 
-.dashboard-container .user-content .user-container .col .content {
+.dashboard-container .user-content .user-container .upcoming-events .col .content {
     margin: 10px 0 10px 10px;
     display: flex;
     justify-content: space-evenly;
@@ -2298,7 +2406,7 @@ footer .bottom .social i {
     transition: all 0.3s ease 0s;
 }
 
-.dashboard-container .user-content .user-container .col .content .img {
+.dashboard-container .user-content .user-container .upcoming-events .col .content .img {
     flex: 0 0 15%;
     height: 40px;
     width: 40px;
@@ -2306,26 +2414,26 @@ footer .bottom .social i {
     border-radius: 2px;
 }
 
-.dashboard-container .user-content .user-container .col .content .event-details {
+.dashboard-container .user-content .user-container .upcoming-events .col .content .event-details {
     flex: 0 0 70%;
     margin: 0 10px;
 }
 
-.dashboard-container .user-content .user-container .col .content .event-details .group {
+.dashboard-container .user-content .user-container .upcoming-events .col .content .event-details .group {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.dashboard-container .user-content .user-container .col .content .event-details h5 {
+.dashboard-container .user-content .user-container .upcoming-events .col .content .event-details h5 {
     font-weight: 400;
 }
 
-.dashboard-container .user-content .user-container .col .content .event-details h5:last-child {
+.dashboard-container .user-content .user-container .upcoming-events .col .content .event-details h5:last-child {
     margin: 5px 0;
 }
 
-.dashboard-container .user-content .user-container .col .content i {
+.dashboard-container .user-content .user-container .upcoming-events .col .content i {
     flex: 0 0 10%;
     margin-left: 8px;
 }
