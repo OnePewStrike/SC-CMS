@@ -1906,7 +1906,7 @@ footer .bottom .social i {
 
 .dashboard-container .content header {  
     border-bottom: 1px solid #000;
-    padding: 20px;
+    padding: 20px 20px 0;
 }
 
 .dashboard-container .content header form {
@@ -1929,6 +1929,52 @@ footer .bottom .social i {
 
 .dashboard-container .content header h2 {
     margin-top: 20px;
+}
+
+.dashboard-container .content header .filter-title {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard-container .content header .filter-title button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px 8px;
+}
+
+.dashboard-container .content header .filter-title button h4 {
+    margin-right: 15px;
+    font-weight: 400;
+}
+
+.dashboard-container .content header .selectors {
+    padding: 8px 4px;
+}
+
+.dashboard-container .content header .selectors button {
+    position: relative;
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 0.85rem;
+    margin-left: 10px;
+}
+
+.dashboard-container .content header .selectors button:hover:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #000;
+    bottom: -9px;
+    left: 0;
+}
+
+.dashboard-container .content header .selectors button:first-child {
+    margin-left: 0;
 }
 
 .dashboard-container .content .main-container {
@@ -2114,7 +2160,7 @@ footer .bottom .social i {
 .dashboard-container .content .main-container .user-data .selectors button:hover:before {
     position: absolute;
     content: "";
-    width: 70px;
+    width: 100%;
     height: 2px;
     background-color: #000;
     bottom: -9px;
@@ -2125,73 +2171,81 @@ footer .bottom .social i {
     margin-left: 0;
 }
 
-.dashboard-container .content .main-container .user-data .table-container {
+.dashboard-container .content .main-container .table-container {
     padding: 5px 10px 5px;
     margin-bottom: 10px;
 }
 
-.dashboard-container .content .main-container .user-data table {
+.dashboard-container .content .main-container.council {
+    padding: 10px;
+}
+
+.dashboard-container .content .main-container.council .table-container {
+    padding: 5px 10px 5px;
+}
+
+.dashboard-container .content .main-container table {
     border-collapse: collapse;
 }
 
-.dashboard-container .content .main-container .user-data table th,
-.dashboard-container .content .main-container .user-data table td {
-    padding: 12px 15px;
+.dashboard-container .content .main-container table th,
+.dashboard-container .content .main-container table td {
+    padding: 20px 15px;
     text-align: left;
     font-size: 0.85rem;
 }
 
-.dashboard-container .content .main-container .user-data table td {
+.dashboard-container .content .main-container table td {
     color: gray;
 }
 
-.dashboard-container .content .main-container .user-data table thead tr{
+.dashboard-container .content .main-container table thead tr{
     height: 20px;
     cursor: pointer;
 }
 
-.dashboard-container .content .main-container .user-data table thead tr .column1 {
-    width: 25%;
-}
-
-.dashboard-container .content .main-container .user-data table thead tr .column2 {
-    width: 10%;
-}
-
-.dashboard-container .content .main-container .user-data table thead tr .column3 {
-    width: 10%;
-}
-
-.dashboard-container .content .main-container .user-data table thead tr .column4 {
-    width: 10%;
-}
-
-.dashboard-container .content .main-container .user-data table thead tr .column5 {
-    width: 20%;
-}
-
-.dashboard-container .content .main-container .user-data table thead tr .column6 {
-    width: 15%;
-}
-
-.dashboard-container .content .main-container .user-data table thead tr .column7 {
-    width: 15%;
-}
-
-.dashboard-container .content .main-container .user-data table tbody tr {
+.dashboard-container .content .main-container table tbody tr {
     height: 30px;
     cursor: pointer;
 }
 
-.dashboard-container .content .main-container .user-data table tbody tr:hover td {
+.dashboard-container .content .main-container table thead tr .column1 {
+    width: 25%;
+}
+
+.dashboard-container .content .main-container table thead tr .column2 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table thead tr .column3 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table thead tr .column4 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table thead tr .column5 {
+    width: 20%;
+}
+
+.dashboard-container .content .main-container table thead tr .column6 {
+    width: 15%;
+}
+
+.dashboard-container .content .main-container table thead tr .column7 {
+    width: 15%;
+}
+
+.dashboard-container .content .main-container table tbody tr:hover td {
     color: #000;
 }
 
-.dashboard-container .content .main-container .user-data table tbody tr:nth-of-type(odd) {
-    background-color: #f3f3f3;
+.dashboard-container .content .main-container table tbody tr:nth-of-type(odd) {
+    background-color: #d9d9d9;
 }
 
-.dashboard-container .content .main-container .user-data table tbody tr td {
+.dashboard-container .content .main-container table tbody tr td {
     line-height: 1.2;
     border-collapse: collapse;
 }
@@ -2300,6 +2354,11 @@ footer .bottom .social i {
 .dashboard-container .user-content .user-container .data-user header .fa-circle-xmark {
     font-size: 1.50rem;
     cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+.dashboard-container .user-content .user-container .data-user header .fa-circle-xmark:hover {
+    transform: scale(1.1);
 }
 
 .dashboard-container .user-content .user-container .data-user .user-details {
@@ -2437,3 +2496,5 @@ footer .bottom .social i {
     flex: 0 0 10%;
     margin-left: 8px;
 }
+
+/* Council Members Section */
