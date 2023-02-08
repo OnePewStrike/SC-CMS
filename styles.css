@@ -2580,7 +2580,7 @@ footer .bottom .social i {
 }
 
 .dashboard-container .content .main-container table .users.head tr .column2 {
-    width: 25%;
+    width: 10%;
 }
 
 .dashboard-container .content .main-container table .users.head tr .column3 {
@@ -2592,7 +2592,7 @@ footer .bottom .social i {
 }
 
 .dashboard-container .content .main-container table .users.head tr .column5 {
-    width: 10%;
+    width: 20%;
 }
 
 .dashboard-container .content .main-container table .users.head tr .column6 {
@@ -2610,4 +2610,46 @@ footer .bottom .social i {
 .dashboard-container .content .main-container table .users.head tr .column9 {
     width: 5%;
     display: flex;
+}
+
+/* Events Section */
+.dashboard-container .content .main-container table .events.head tr .column1 {
+    width: 20%;
+}
+
+.dashboard-container .content .main-container table .events.head tr .column2 {
+    width: 40%;
+}
+
+.dashboard-container .content .main-container table .events.head tr .column3 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .events.head tr .column4 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .events.head tr .column5 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .events.head tr .column6 {
+    width: 10%;
+    display: flex;
+}
+
+.dashboard-container .user-content .user-container .user-details.event .square {
+    margin: 10px 0;
+    border: 1px solid #000;
+    border-radius: 2px;
+    height: 100px;
+    width: 175px;
+}
+
+.dashboard-container .user-content .user-container .user-details.event .details {
+    grid-template-columns: 1.5fr 2fr;
+}
+
+.dashboard-container .user-content .user-container .user-details.event .details p {
+    margin: 5px 0;
 }
