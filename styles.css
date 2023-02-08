@@ -1828,7 +1828,7 @@ footer .bottom .social i {
 }
 
 .dashboard-container .side-navbar {
-    flex: 0 0 20%;
+    flex: 0 0 18%;
     border: 1px solid #000;
     min-height: 100vh;
     border-bottom: none;
@@ -1901,7 +1901,7 @@ footer .bottom .social i {
 
 
 .dashboard-container .content {
-    flex: 0 0 60%;
+    flex: 0 0 62%;
 }
 
 .dashboard-container .content header {  
@@ -2570,6 +2570,44 @@ footer .bottom .social i {
 }
 
 .dashboard-container .content .main-container table .committee.head tr .column5 {
+    width: 5%;
+    display: flex;
+}
+
+/* Users Section */
+.dashboard-container .content .main-container table .users.head tr .column1 {
+    width: 20%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column2 {
+    width: 25%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column3 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column4 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column5 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column6 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column7 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column8 {
+    width: 10%;
+}
+
+.dashboard-container .content .main-container table .users.head tr .column9 {
     width: 5%;
     display: flex;
 }
